@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Big Leader Project - 인구감소지역 모니터링</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="BigLeader.css">
+        
+    </head>
+    <body>
+        <div id="navi_bar">
+            <a id="bigleader_icon" href="BigLeader_main.html"><img src="logo_bigleader.png" height="50" width="175"></a>
+            <ul id="navi_menu">
+                <a href="#"><li>MENU 1</li></a>
+                <a href="#"><li>MENU 2</li></a>
+                <a href="#"><li>MENU 3</li></a>
+                <a href="metaData.html" target="blank_"><li>메타데이터 확인</li></a>
+            </ul>
+        </div>
+        <div class="contents_container">
+            
+            <div id="sub_navi_bar">
+                <p>주요 데이터</p>
+                <ul>
+                    <a href="graph_1.html"><li>전년월 대비<br>방문인구 증감률</li></a>
+                    <a href="#"><li background-color="gray">고령인구비율</li></a>
+                    <a href="graph_2.html"><li>월별 카드소비내역<br>(BC 카드)</li></a>
+                    <a href="graph_3.html"><li>지역 인구감소<br>분류코드</li></a>
+                </ul>
+            </div>
+            <div id="contents_box">
+                <div>
+                    <div id="search_box">
+                        <a>지역 검색 >></a>
+                        <select id="sido">
+                            <option>- 시 / 도 -</option>
+                            <option>서울특별시</option>
+                            <option>인천광역시</option>
+                            <option>대전광역시</option>
+                            <option>세종특별자치시</option>
+                            <option>광주광역시</option>
+                            <option>대구광역시</option>
+                            <option>울산광역시</option>
+                            <option>부산광역시</option>
+                            <option>제주특별자치도</option>
+                            <option>경기도</option>
+                            <option>강원도</option>
+                            <option>충청북도</option>
+                            <option>충청남도</option>
+                            <option>전라북도</option>
+                            <option>전라남도</option>     
+                            <option>경상북도</option>
+                            <option>경상남도</option>    
+                        </select>
+                        <select id="gugun">
+                            <option>- 시군구 -</option>
+                        </select>
+                    </div>
+                </div>
+                <img src="a.jpg" class="graph">
+                <img src="b.jpg" class="graph">
+                <img src="c.jpg" class="graph">
+                <img src="d.jpg" class="graph">
+                <img src="e.jpg" class="graph">
+            </div>
+            
+        </div>
+        <script type="text/javascript" src="BigLeader.js"></script>
+    </body>
+</html>
