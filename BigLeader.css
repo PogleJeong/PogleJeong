@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #58595b;
+    font-family: 'banana';
+}
+a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #545454;
+}
+
+@font-face {
+  src: url('../fonts/BMJUA_otf.otf');
+  font-family:'banana';
+}
+
+#navi_bar {
+    display: inline-block;
+    border-bottom-style: solid;
+    border-bottom-color: slategrey;
+    border-bottom-width: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#bigleader_icon img {
+    vertical-align: middle;
+}
+
+#navi_bar ul {
+    float:right;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+/*navi_bar_menu로 해서 계속 적용안되었음*/
+/*padding 은 top, right, bottom, left 명시해주어야함.*/
+#navi_menu li{
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#navi_menu li:hover {
+    color: pink;
+    background-color: antiquewhite;
+}
+
+#sub_navi_bar {
+    list-style: none;
+    float: left;
+    width: 200px;
+    height: 800px;
+    background-color: silver;
+    text-align: center;
+}
+#sub_navi_bar p {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: black;
+}
+
+#sub_navi_bar ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+#sub_navi_bar li {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: center;
+    font-size: 20px;
+}
+#sub_navi_bar li:hover {
+    background-color: beige;
+}
+
+#search_box {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 0px;
+    padding: 0px 20px;
+    vertical-align: middle;
+    text-align: right;
+}
+#search_box a {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#search_box select {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.link_bar ul{
+    text-align: center;
+    margin:5px;
+    padding: 0px;
+}
+.link_bar li{
+    display: inline-block;
+    margin: 30px
+}
+.graph {
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+}

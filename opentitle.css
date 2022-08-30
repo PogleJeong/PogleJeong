@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+.navi_bar {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px, gray, solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+div img {
+    display: inline-block;
+    vertical-align: middle;
+}
