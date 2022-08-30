@@ -11,7 +11,7 @@ a {
 }
 
 @font-face {
-  src: url('../fonts/BMJUA_otf.otf');
+  src: url('BMJUA_otf.otf');
   font-family:'banana';
 }
 
