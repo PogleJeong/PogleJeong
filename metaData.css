@@ -55,3 +55,13 @@ a {
 #sub_navi_bar li:hover {
     background-color: beige;
 }
+
+.metadata div {
+    display: inline-block;
+    width: 800px;
+    height: 300px;
+}
+#file_download {
+    font-size:14px;
+    color: blue;
+}

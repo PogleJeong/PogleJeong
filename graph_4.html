@@ -4,9 +4,24 @@
         <title>Big Leader Project - 인구감소지역 모니터링</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="BigLeader.css">
-        
+        <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript">
+            function initViz() {
+                var containerDiv = document.getElementById("vizContainer"),
+                    url = "https://public.tableau.com/views/2022-_16618782688440/sheet0?:language=ko-KR&:display_count=n&:origin=viz_share_link",
+                    options = {
+                        hideTabs: true,
+                        onFirstInteractive: function () {
+                            console.log("Run this code when the viz has finished loading.");
+                        }
+                    };
+                var viz = new tableau.Viz(containerDiv, url, options);
+                // Create a viz object and embed it in the container div.
+            }
+        </script>
     </head>
-    <body>
+
+    <body onload="initViz();">
         <div id="navi_bar">
             <a id="bigleader_icon" href="BigLeader_main.html"><img src="logo_bigleader.png" height="50" width="175"></a>
             <ul id="navi_menu">
@@ -28,6 +43,7 @@
                 </ul>
             </div>
             <div id="contents_box">
+                <!--
                 <div>
                     <div id="search_box">
                         <a>지역 검색 >></a>
@@ -56,14 +72,9 @@
                         </select>
                     </div>
                 </div>
-                <img src="a.jpg" class="graph">
-                <img src="b.jpg" class="graph">
-                <img src="c.jpg" class="graph">
-                <img src="d.jpg" class="graph">
-                <img src="e.jpg" class="graph">
+                -->
+                <div id="vizContainer"></div>
             </div>
-            
         </div>
-        <script type="text/javascript" src="BigLeader.js"></script>
     </body>
 </html>

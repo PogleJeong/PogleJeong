@@ -4,9 +4,8 @@
         <title>Big Leader Project - 인구감소지역 모니터링</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="BigLeader.css">
-        
     </head>
-    <body>
+    <body onload="initViz();">
         <div id="navi_bar">
             <a id="bigleader_icon" href="BigLeader_main.html"><img src="logo_bigleader.png" height="50" width="175"></a>
             <ul id="navi_menu">
@@ -27,12 +26,8 @@
                     <a href="graph_4.html"><li>지역 인구감소<br>분류코드</li></a>
                 </ul>
             </div>
-            <div height="600"></div>    
-        </div>
-        <div>
-
+            <div id="vizContainer" style="width:800px; height:700px; display: inline-block;"></div>
         </div>
         <p id="team_intro">@ 빅리더 AI 아카데미 - [한국관광공사] 경남대-웰컴투지방 팀.</p>
-        <script type="text/javascript" src="BigLeader.js"></script>
     </body>
 </html>

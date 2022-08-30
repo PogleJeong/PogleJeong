@@ -1,6 +1,15 @@
-function initViz() {
-    var containerDiv = document.getElementById("vizContainer"),
-    url = "https://public.tableau.com/app/profile/.14312360/viz/_16618623910980/1";
-
-    var viz = new tableau.Viz(containerDiv, url);
-}
+function initializeViz() {
+    var placeholderDiv = document.getElementById("tableauViz");
+    var url = "https://public.tableau.com/views/WorldIndicators/GDPpercapita";
+    var options = {
+      width: placeholderDiv.offsetWidth,
+      height: placeholderDiv.offsetHeight,
+      hideTabs: true,
+      hideToolbar: true,
+      onFirstInteractive: function () {
+        workbook = viz.getWorkbook();
+        activeSheet = workbook.getActiveSheet();
+      }
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options);
+  }  

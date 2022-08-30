@@ -60,7 +60,7 @@ body {
     list-style: none;
     float: left;
     width: 200px;
-    height: 800px;
+    height: 900px;
     background-color: silver;
     text-align: center;
 }
@@ -127,4 +127,9 @@ body {
 }
 #team_intro {
     text-align: right;
+}
+#vizContainer {
+    display: inline-block;
+    width: 1400px;
+    height: 900px;
 }
