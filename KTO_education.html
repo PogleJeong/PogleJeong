@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KTO data lab</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/main_style.css">
+        <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript">
+            function initViz() {
+                var containerDiv = document.getElementById("vizContainer"),
+                    url = "https://public.tableau.com/views/__16649473218850/1_1?:language=ko-KR&:display_count=n&:origin=viz_share_link",
+                    options = {
+                        hideTabs: true,
+                        onFirstInteractive: function () {
+                            console.log("Run this code when the viz has finished loading.");
+                        }
+                    };
+                var viz = new tableau.Viz(containerDiv, url, options);
+                // Create a viz object and embed it in the container div.
+            }
+        </script>
+    </head>
+    <body onload="initViz();">
+    </div>
+        <div class="util">
+            <div class="header_bar">
+                <ul>
+                    <a href="#"><li>로그인</li></a>
+                    <a href="#"><li>회원가입</li></a>
+                    <!-- form 안에 검색창, 검색버튼 구현. -->
+                    <form id="form_box" style="display: inline-block">
+                        <input type="text" id="search_bar" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요.">
+                        <button id="search_button" type="submit"><img id="search_icon" src=images/search_icon.png width="15px"></button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_container">
+            <a href="https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do" id="logo" target='_blank'><img src="images/logo.png" height="51px" weight="180px" style="vertical-align:middle"></a>
+            <ul class="menu">    
+                <li class="depth1">
+                    <a href="#">
+                        지역별 데이터랩
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#">∙전국 대시보드</a>
+                                <ul class="depth3">
+                                    <li> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">∙지역별 대시보드</a>
+                                <ul class="depth3">
+                                    <li><a href="#">지역별 관광 현황</a></li>
+                                    <li><a href="#">관광진단 지표 분석</a></li>
+                                    <li><a href="#">AI 관광 분석</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙관광지별 대시보드</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙우리 동네 외국인 방문객</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="#">
+                        국가별 데이터랩
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#">∙글로벌 대시보드</a>
+                                <ul class="depth3">
+                                    <li><a href="#">글로벌 방한여행</a></li>
+                                    <li><a href="#">글로벌 해외여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">∙국가별 대시보드</a>
+                                <ul class="depth3">
+                                    <li><a href="#">국가별 방한여행</a></li>
+                                    <li><a href="#">국가별 해외여행</a></li>
+                                    <li><a href="#">국가개요</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙국민 해외관광 대시보드</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙코로나19 상황판</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="#">마이 데이터랩</a>
+                </li>
+                <li class="depth1">
+                    <a href="#">빅데이터</a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#">∙이동통신</a>
+                                <ul class="depth3">
+                                    <li><a href="#">지역별 방문자수</a></li>
+                                    <li><a href="#">지역별 방문자수 비교</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">∙신용카드</a>
+                                <ul class="depth3">
+                                    <li><a href="#">지역별 관광지출액</a></li>
+                                    <li><a href="#">지역별 관광지출액 비교</a></li>         
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙내비게이션</a>
+                                <ul class="depth3">
+                                    <li><a href="#">지역별 검색건수</a></li>
+                                    <li><a href="#">지역별 검색건수 비교</a></li>
+                                    <li><a href="#">지역별 관광지 검색순위</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="#">관광통계/실태조사</a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#">∙관광통계</a>
+                                <ul class="depth3">
+                                    <li><a href="#">방한 외래관광객</a></li>
+                                    <li><a href="#">국민 해외관광객</a></li>
+                                    <li><a href="#">관광수지</a></li>
+                                    <li><a href="#">크루즈통계</a></li>
+                                    <li><a href="#">세계관광통계</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">∙여행실태조사</a>
+                                <ul class="depth3">
+                                    <li><a href="#">국민여행조사</a></li>
+                                    <li><a href="#">외래관광객조사</a></li>
+                                    <li><a href="#">관광불편신고</a></li>
+                                    <li><a href="#">관광불편신고 지역별 비교</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙MICE 통계</a>
+                                <ul class="depth3">
+                                    <li><a href="#">MICE 규모조사</a></li>
+                                    <li><a href="#">MICE 사업체조사</a></li>
+                                    <li><a href="#">경제적 파급효과 계산기</a></li>
+                                    <li><a href="#">MICE 참가자조사(미팅/컨벤션)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙관광라이브러리</a>
+                                <ul class="depth3">
+                                    <li><a href="#">국내시장동향</a></li>
+                                    <li><a href="#">해외시장동향</a></li>
+                                    <li><a href="#">관광통계/조사 게시판</a></li>
+                                    <li><a href="#">뉴스레터/발간보고서</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="#">데이터랩 소개</a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#">∙전국 대시보드</a>
+                                <ul class="depth3">
+                                    <li> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">∙지역별 대시보드</a>
+                                <ul class="depth3">
+                                    <li><a href="#">지역별 관광 현황</a></li>
+                                    <li><a href="#">관광진단 지표 분석</a></li>
+                                    <li><a href="#">AI 관광 분석</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙국민 해외관광 대시보드</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'>∙우리 동네 외국인 방문객</a>
+                                <ul class="depth3">
+                                    <li></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="KTO_economy.html">데이터랩 프로젝트</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="tableau_container">
+                <div id="option_box">
+                    <ul>
+                        <li><a href="KTO_education.html" style="font-weight: bold;">교육</a></li>
+                        <li><a href="KTO_population.html">인구</a></li>
+                        <li><a href="KTO_economy.html">경제</a></li>
+                        <li><a href="KTO_tour.html">관광&일자리</a></li>
+                    </ul>
+                </div>
+                <div id="vizContainer">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
