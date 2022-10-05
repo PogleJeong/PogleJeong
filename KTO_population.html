@@ -8,7 +8,9 @@
         <script type="text/javascript">
             function initViz() {
                 var containerDiv = document.getElementById("vizContainer"),
+                    containerDiv2= document.getElementById("vizContainer2")
                     url = "https://public.tableau.com/views/__16649479601310/sheet4?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link",
+                    url2 = "https://public.tableau.com/views/__16649478421310/sheet1?:language=ko-KR&publish=yes&:display_count=n&:origin=viz_share_link",
                     options = {
                         hideTabs: true,
                         onFirstInteractive: function () {
@@ -16,6 +18,7 @@
                         }
                     };
                 var viz = new tableau.Viz(containerDiv, url, options);
+                var viz2 = new tableau.Viz(containerDiv2, url2, options);
                 // Create a viz object and embed it in the container div.
             }
         </script>
@@ -225,6 +228,7 @@
         </div>
         <div>
             <div class="tableau_container">
+                <div id="vizContainer2"></div>
                 <div id="option_box">
                     <ul>
                         <li><a href="KTO_education.html">교육</a></li>

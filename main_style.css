@@ -161,7 +161,9 @@ body {
 .depth3 li {
     display: block;
 }
-
+#option_box {
+    margin-top:100px;
+}
 #option_box > ul {
     height: 45px;
     padding-left:10px; 
@@ -182,5 +184,5 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     min-width: 700px;
-    height: 1000px;
+    height: auto;
 }
