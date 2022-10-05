@@ -6,7 +6,7 @@
     color: black;
 }
 body {
-    min-width: 1000px;
+    min-width: 1300px;
 }
 .header_bar {
     position: relative;
@@ -139,7 +139,7 @@ body {
     background-color: #d3eaf3;
     box-sizing: border-box;
     border-left: 3px, #1E96C4, solid ;
-    border-right: 3px, , solid ;
+    border-right: 3px, #1E96C4, solid ;
     transition:1s;
 }
 
@@ -178,9 +178,9 @@ body {
 }
 
 .tableau_container {
-    padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
-    width: 100%;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 700px;
     height: 1000px;
 }
